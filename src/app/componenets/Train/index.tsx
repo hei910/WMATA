@@ -8,6 +8,14 @@ interface IProps {
     count: number;
 }
 
+const getServiceTxt = (service: string) => {
+    return !service || service === "Unknown"
+        ? "--"
+        : service === "NoPassengers"
+        ? "Empty"
+        : service;
+};
+
 const Train = ({ lineCode, id, service, count }: IProps) => {
     return (
         <div className={`train ${!!lineCode ? lineCode : "inactive"}`}>
@@ -23,7 +31,7 @@ const Train = ({ lineCode, id, service, count }: IProps) => {
                 )}
             </div>
             <div className="service">
-                <span>{service && service !== "Unknown" ? service : "--"}</span>
+                <span>{getServiceTxt(service)}</span>
             </div>
         </div>
     );
