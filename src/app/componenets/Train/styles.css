@@ -1,0 +1,105 @@
+.train {
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    /* width: 8em;
+    height: 8em;
+    margin: -1px 0 0 -1px;
+    border: 1px solid #ccc; */
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.25s ease-in-out opacity;
+}
+
+.train:hover .icon {
+    transform: scale(1.1);
+}
+
+.train span {
+    color: #333;
+}
+
+.train .icon {
+    width: 3em;
+    height: 3em;
+    margin: 0 auto;
+    padding: 0.25em;
+    position: relative;
+    transition: 0.25s ease-in-out transform;
+}
+
+.train .id {
+    font-weight: 700;
+}
+
+.train .service {
+    display: inline-block;
+    min-width: 4em;
+    margin: 0.25em 0;
+    padding: 0.25em;
+    background: currentColor;
+    border-radius: 2em;
+}
+
+.train .count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* transform: translate(50%, -50%); */
+    font-size: 10px;
+    line-height: 1;
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: currentColor;
+    border-radius: 50%;
+}
+
+.train .count span,
+.train .service span {
+    color: white;
+}
+
+.train.inactive:not(:hover) {
+    opacity: 0.1;
+}
+
+/* .train.inactive .id,
+.train.inactive .service,
+.train.inactive .count {
+    visibility: hidden;
+} */
+
+.train.RD {
+    color: red;
+}
+
+.train.BL {
+    color: blue;
+}
+
+.train.YL {
+    color: yellow;
+}
+
+.train.OR {
+    color: orange;
+}
+
+.train.GR {
+    color: green;
+}
+
+.train.SV {
+    color: silver;
+}
+
+.train .fill {
+    fill: currentColor !important;
+}

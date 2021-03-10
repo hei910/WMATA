@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+.App {
+    max-width: 960px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.trains {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
