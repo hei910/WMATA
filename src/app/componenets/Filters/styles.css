@@ -1,0 +1,54 @@
+.filters {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    margin: 0 1em;
+}
+
+.filter .label {
+    font-weight: 700;
+    margin: 0 0.25em 0 0;
+}
+
+.filter-line {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    min-width: 4em;
+    height: 2em;
+    margin: 0.25em 2px;
+    border-radius: 1em;
+    background: currentColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.filter-line span {
+    color: white;
+}
+.filter-line.active {
+    border: 1px solid currentColor;
+    background: transparent;
+}
+.filter-line.active span {
+    color: inherit;
+}
+.filter-line.YL span {
+    color: #666;
+}
+
+input,
+button,
+select {
+    font-size: 12px;
+    height: 2em;
+    outline: none;
+}

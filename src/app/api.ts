@@ -1,17 +1,6 @@
-const APIKey = "e13626d03d8e4c03ac07f95541b3091b";
+import { ITrain, ITrainLine } from "./types";
 
-export interface ITrain {
-    TrainId: string;
-    CarCount: number;
-    LineCode: string | null;
-    ServiceType: string;
-    [key: string]: any;
-}
-export interface ITrainLineList {
-    DisplayName: string;
-    LineCode: string;
-    [key: string]: any;
-}
+const APIKey = "e13626d03d8e4c03ac07f95541b3091b";
 
 const get = (url: string, headers = {}) => {
     return fetch(url, {
@@ -30,5 +19,5 @@ export const getTrains = () =>
 
 export const getTrainLineList = () =>
     get("https://api.wmata.com/Rail.svc/json/jLines").then(
-        (data): ITrainLineList[] => data.Lines
+        (data): ITrainLine[] => data.Lines
     );

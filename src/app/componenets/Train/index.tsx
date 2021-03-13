@@ -2,7 +2,7 @@ import { ReactComponent as IconTrain } from "./train.svg";
 import "./styles.css";
 
 interface IProps {
-    lineCode: string;
+    lineCode: string | null;
     id: number | string;
     service: string;
     count: number;

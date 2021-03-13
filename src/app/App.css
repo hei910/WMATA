@@ -3,18 +3,26 @@
 }
 
 .App {
+    color: #222;
     max-width: 960px;
     height: 100vh;
     margin: 0 auto;
     padding: 2em;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
 }
 .trains {
+    width: 100%;
+    margin: 1em auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+}
+.empty {
+    font-size: 1.25em;
+    text-align: center;
+    width: 100%;
 }
