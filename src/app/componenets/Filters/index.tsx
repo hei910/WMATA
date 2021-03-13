@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { SetStateAction, useState } from "react";
+import { SetStateAction } from "react";
 import { IFilters } from "../../types";
 import { ITrainLine } from "../../types";
 import "./styles.css";
@@ -96,7 +96,9 @@ const ServiceFilter = (props: IProps3) => {
             >
                 <option value="">- Select -</option>
                 {serviceFilterList.map((type) => (
-                    <option value={type}>{type}</option>
+                    <option key={type} value={type}>
+                        {type}
+                    </option>
                 ))}
             </select>
         </div>
